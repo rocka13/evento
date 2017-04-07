@@ -1,0 +1,19 @@
+
+
+1- chmod 777 -R projecto/storage
+
+2- configuracion del default nginx
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server ipv6only=on;
+
+    root /var/www/todo/public;
+    index index.php index.html index.htm;
+
+    server_name laravel.example.com;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+}

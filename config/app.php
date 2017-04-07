@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Bogota',
 
     /*
     |--------------------------------------------------------------------------
@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        evento\Providers\AppServiceProvider::class,
+        evento\Providers\AuthServiceProvider::class,
+        evento\Providers\EventServiceProvider::class,
+        evento\Providers\RouteServiceProvider::class,
 
     ],
 
